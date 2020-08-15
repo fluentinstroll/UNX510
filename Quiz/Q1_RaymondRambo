@@ -1,0 +1,28 @@
+#!/bin/bash
+
+echo "Creating WORDS array..."
+WORDS=(spy spider spiderman spin spiderweb spiral sport sportswear sportscast)
+
+echo "Showing number of values..."
+echo ${#WORDS[@]}
+
+
+echo "Displaying number of letters in each word..."
+for word in ${WORDS[*]}; do
+	echo ${#word}
+done
+
+echo "Displaying every word except first 2..."
+echo ${WORDS[2]}
+echo ${WORDS[3]}
+echo ${WORDS[4]}
+echo ${WORDS[5]}
+echo ${WORDS[6]}
+echo ${WORDS[7]}
+echo ${WORDS[8]}
+
+for word in ${WORDS[*]}; do
+	if [[ ${WORDS[i]} == *'spid'* ]]; then
+		${WORDS[i]}=`echo ${WORDS[i]} | tr 'spid' 'SpID'`
+	fi
+done

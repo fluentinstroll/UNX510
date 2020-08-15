@@ -1,0 +1,10 @@
+#!/bin/bash
+
+declare -A myCourses
+
+myCourses[ULI101]="Intro to Unix"
+myCourses[GAM534]="Game Content Creation"
+myCourses[PRJ666]="Project Implementation"
+myCourses[SMH345]="Something else I'm only taking 3"
+
+for course in ${!myCourses[*]}; do echo "course $course is ${myCourses[$course]}"; done
