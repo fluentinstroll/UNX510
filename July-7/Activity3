@@ -1,0 +1,10 @@
+#!/bin/bash
+
+PS3="Enter a number: "
+
+select character in Shedon Leonard Penny Howard
+do
+	echo "Selected character: $character"
+	echo "Selected number $REPLY"
+done
+

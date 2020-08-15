@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo -n "Enter password: "
+stty -echo
+read
+stty echo
+echo -e "\nYou entered '$REPLY'"
